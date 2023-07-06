@@ -1,0 +1,775 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+
+  .nav-icon {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: #232b2b;
+  }
+
+  .down-arrow {
+    max-width: 125px;
+    max-height: 8px;
+    margin-left: 10px;
+    transition-duration: 0.5s;
+  }
+
+  #List-button {
+    position: relative;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Work Sans", sans-serif;
+    transition-duration: 0.5s;
+  }
+
+  .list-drop {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+
+  #List-contents {
+    font-size: 12px;
+    display: none;
+    width: 100%;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  #List-button-title {
+    color: #343434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*   .list-drop:after .list-contents {
+    display: block;
+  }
+
+  .list-drop:after .list-button {
+    border-bottom: solid 5px purple;
+  } */
+
+  .nav-elements {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #343434;
+    border-bottom: 1px solid grey;
+  }
+
+  #Red1:hover #Red2 {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+  #Orange1:hover #Orange2 {
+    color: orange;
+    background-color: rgba(255, 165, 0, 0.1);
+  }
+
+  #Yellow1:hover #Yellow2 {
+    color: #ffc40c;
+    background-color: rgba(255, 255, 0, 0.1);
+  }
+
+  #Green1:hover #Green2 {
+    color: green;
+    background-color: rgba(0, 255, 0, 0.1);
+  }
+
+  #Blue1:hover #Blue2 {
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.1);
+  }
+
+  #Indigo1:hover #Indigo2 {
+    color: indigo;
+    background-color: rgba(75, 0, 130, 0.1);
+  }
+
+  #Violet1:hover #Violet2 {
+    color: violet;
+    background-color: rgba(143, 0, 255, 0.1);
+  }
+
+  /*   #Orange1.nav-elements:hover {
+    border-bottom: solid 5px orange;
+  }
+
+  #Yellow1.nav-elements:hover {
+    border-bottom: solid 5px #ffc40c;
+  }
+
+  #Green1.nav-elements:hover {
+    border-bottom: solid 5px green;
+  }
+
+  #Blue1.nav-elements:hover {
+    border-bottom: solid 5px blue;
+  }
+
+  #Indigo1.nav-elements:hover {
+    border-bottom: solid 5px indigo;
+  }
+
+  #Violet1.nav-elements:hover {
+    border-bottom: solid 5px violet;
+  } */
+
+  .image-banner {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+  }
+
+  .test-image {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+  }
+
+  .image-within {
+    object-fit: cover;
+    width: 100%;
+    /*     height: 650px; */
+  }
+
+  .note {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 0, 0.3);
+  }
+
+  br.space {
+    display: none;
+  }
+
+  br.space1 {
+    display: none;
+  }
+
+  .test-note {
+    margin: 25px;
+  }
+
+  .test1 {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .pin {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .test2 {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 25px;
+  }
+
+  .test3 {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 25px;
+  }
+
+  .note-title {
+    font-size: 35px;
+    font-family: "Special Elite", cursive;
+  }
+
+  .note-detail {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .note-ex {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  /*   #Red1.nav-elements {
+    border-bottom: solid 5px red;
+  }
+
+  #Orange1.nav-elements {
+    border-bottom: solid 5px orange;
+  }
+
+  #Yellow1.nav-elements {
+    border-bottom: solid 5px #ffc40c;
+  }
+
+  #Green1.nav-elements {
+    border-bottom: solid 5px green;
+  }
+
+  #Blue1.nav-elements {
+    border-bottom: solid 5px blue;
+  }
+
+  #Indigo1.nav-elements {
+    border-bottom: solid 5px indigo;
+  }
+
+  #Violet1.nav-elements {
+    border-bottom: solid 5px violet;
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .list-drop {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0px;
+    /*     max-width: 2000px;
+    width: 90vw; */
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .nav-icon {
+    width: 100%;
+    /*     font-family: "Special Elite", cursive; */
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #232b2b;
+    text-align: center;
+  }
+
+  .sub-nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .nav-elements {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #343434;
+    transition-duration: 0.25s;
+  }
+
+  .nav-elements:hover {
+    border-bottom: solid 5px;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-banner {
+    position: relative;
+    object-fit: fill;
+    height: 450px;
+    border: solid 20px #faebd7;
+    border-bottom: solid 50px #faebd7;
+    min-width: 500px;
+    transform: rotate(0.75deg);
+    transition-duration: 2s;
+    box-shadow: 15px 15px 5px #696969;
+    max-width: 650px;
+  }
+
+  .image-banner:hover {
+    transform: rotate(0deg);
+    box-shadow: none;
+    border: solid 20px white;
+    border-bottom: solid 50px white;
+  }
+
+  .test-image {
+    /*     border: 25px double transparent; */
+    /*     border-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/photo-1555505019-8c3f1c4aba5f.jpg?v=1655508772320")
+      10 round; */
+    background-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/grey-wooden-background_1048-1517.webp?v=1655277802253");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+  }
+
+  .pin {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 125px;
+    height: 125px;
+  }
+
+  .image-within {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+  }
+
+  .test-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .note {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    width: 100%;
+    min-width: 500px;
+    max-width: 750px;
+    background-color: #fafad2;
+    background-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/notepad.jpg?v=1655311081774");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  br.space {
+    display: none;
+  }
+
+  .test-note {
+    margin: 50px;
+  }
+
+  .test1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 75px;
+    height: 75px;
+    transform: rotate(300deg);
+  }
+
+  .test2 {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 25px;
+  }
+
+  .test3 {
+    display: none;
+    font-family: "Special Elite", cursive;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(250, 250, 210, 1);
+    padding: 25px;
+    border-left: 15px solid yellow;
+  }
+
+  .note-title {
+    font-size: 40px;
+    font-family: "Special Elite", cursive;
+  }
+
+  .note-detail {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .note-ex {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-drop {
+    display: none;
+  }
+
+  .navbar {
+    padding: 5px;
+    /*     max-width: 2000px;
+    width: 90vw; */
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .nav-icon {
+    /*     font-family: "Special Elite", cursive; */
+    font-family: "Work Sans", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: #232b2b;
+    text-align: center;
+  }
+
+  .sub-nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .nav-elements {
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #343434;
+    transition-duration: 0.25s;
+  }
+
+  .nav-elements:hover {
+    border-bottom: solid 5px;
+  }
+
+  /*   Reference: the filter code I used was obtained from http://www.coding-dude.com/wp/css/css-image-effects/ */
+  .image-banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 15px 15px 5px #696969;
+    opacity: 0.8;
+    min-width: 500px;
+    min-height: 450px;
+    width: 100%;
+    object-fit: cover;
+    height: 37vw;
+    filter: sepia(50%) contrast(150%) saturate(200%) brightness(100%)
+      hue-rotate(-15deg);
+    border: 20px solid #faebd7;
+    /*     border-bottom: 75px solid #faebd7; */
+  }
+
+  .test-image {
+    /*     background-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/push-pin-clipart-transparent-background-6.png?v=1655284206702");
+    background-size: 125px 125px;
+    background-position: left top;
+    background-repeat: no-repeat; */
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: rotate(0.75deg);
+    transition-duration: 3s;
+    min-width: 500px;
+    min-height: 450px;
+    width: 55%;
+    object-fit: cover;
+    height: 40vw;
+    opacity: 1;
+  }
+
+  .pin {
+    position: absolute;
+    left: 25px;
+    top: 5px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .dust {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .image-within {
+    object-fit: cover;
+    width: 100%;
+    height: 23vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    /*     box-shadow: 10px 10px 5px #696969; */
+  }
+
+  .test-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: text-decoration;
+    transition-duration: 5s;
+  }
+
+  .test1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 85px;
+    height: 85px;
+    transform: rotate(300deg);
+  }
+
+  .test2 {
+    font-family: "Special Elite", cursive;
+    position: absolute;
+    right: -40px;
+    top: 35px;
+    background-color: rgba(250, 250, 210, 1);
+    padding: 20px;
+    border-left: 15px solid yellow;
+    font-size: 20px;
+    content: "test";
+  }
+
+  .test3 {
+    font-family: "Special Elite", cursive;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    background-color: rgba(250, 250, 210, 1);
+    padding: 25px;
+    border-left: 15px solid yellow;
+  }
+
+  @keyframes clean {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .test-image:hover {
+    background-image: none;
+    transform: rotate(0deg);
+  }
+
+  .test-image:hover .image-banner {
+    box-shadow: 5px 5px 2px #696969;
+    animation: clean 3s;
+    opacity: 1;
+    filter: none;
+    border: 20px solid white;
+  }
+
+  .test-image:hover .pin {
+    display: none;
+  }
+
+  .test-image:hover .test2 {
+    display: none;
+  }
+
+  .test-image:hover .test3 {
+    display: none;
+  }
+
+  .note {
+    width: 37%;
+    margin-left: auto;
+    background-color: #fafad2;
+    background-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/notepad.jpg?v=1655311081774");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  br.space {
+    display: initial;
+  }
+
+  .test-note {
+    margin: 40px;
+  }
+
+  .note-title {
+    font-size: 2.25rem;
+    font-family: "Special Elite", cursive;
+  }
+
+  .note-detail {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .note-ex {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1900px) {
+  .navbar {
+    padding: 10px;
+    /*     max-width: 2000px;
+    width: 90vw; */
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .nav-icon {
+    font-size: 0.9vw;
+  }
+
+  .sub-nav {
+    font-size: 0.7vw;
+  }
+
+  .test-note {
+    margin: 50px;
+  }
+
+  .note-title {
+    font-size: 2vw;
+    font-family: "Special Elite", cursive;
+  }
+
+  .note-detail {
+    font-size: 1vw;
+    line-height: 1.5;
+  }
+
+  .note {
+    margin-top: 10px;
+  }
+
+  .note-ex {
+    font-size: 1.25vw;
+    line-height: 1.5;
+  }
+
+  .test2 {
+    padding: 25px;
+    right: -50px;
+    top: 35px;
+    font-size: 25px;
+  }
+
+  .image-banner {
+    border: 25px solid #faebd7;
+    /*     border-bottom: 75px solid #faebd7; */
+  }
+
+  .pin {
+    left: 30px;
+    top: 10px;
+    width: 100px;
+    height: 101px;
+  }
+
+  .test-image:hover .image-banner {
+    border: 25px solid white;
+  }
+}
+
+#Red.nav-elements:hover {
+  border-bottom: solid 5px red;
+}
+
+#Orange.nav-elements:hover {
+  border-bottom: solid 5px orange;
+}
+
+#Yellow.nav-elements:hover {
+  border-bottom: solid 5px #ffc40c;
+}
+
+#Green.nav-elements:hover {
+  border-bottom: solid 5px green;
+}
+
+#Blue.nav-elements:hover {
+  border-bottom: solid 5px blue;
+}
+
+#Indigo.nav-elements:hover {
+  border-bottom: solid 5px indigo;
+}
+
+#Violet.nav-elements:hover {
+  border-bottom: solid 5px violet;
+}
+
+.banner-photo {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #dcdcdc;
+  background-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/abstract-background-with-squares_23-2148995948.webp?v=1655276862736");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  margin-top: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.image-note {
+  font-family: cursive;
+}
