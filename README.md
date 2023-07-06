@@ -2,7 +2,7 @@
 
 Visit Site: https://rainbow-kelvin-ck-chan.glitch.me/
 
-The project features an eye-catching website that presents facts about the seven rainbow colors. With a sleek design and interactive components using animations, it aim to provide an engaging user experience, encouraging visitors to explore and navigate the rainbow colors with curiosity.
+The project features an eye-catching website that presents facts about the seven rainbow colors. With a sleek design and interactive components using transform and transitions, it aim to provide an engaging user experience, encouraging visitors to explore and navigate the rainbow colors with curiosity.
 
 This was a project during my internship at Code Tenderloin.
 
