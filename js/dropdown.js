@@ -5,7 +5,6 @@ This is your site JavaScript code - you can add interactivity and carry out proc
 
 // Print a message in the browser's dev tools console each time the page loads
 // Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
 
 /* 
 Make the "Click me!" button move when the visitor clicks it:
@@ -21,7 +20,6 @@ if (btn) {
 }
 
 function OpenDropDown() {
-  console.log("test");
   if (document.getElementById("List-contents").style.display == "block") {
     document.getElementById("List-contents").style.display = "none";
     document.getElementById("List-button").style.borderBottom = "none";
