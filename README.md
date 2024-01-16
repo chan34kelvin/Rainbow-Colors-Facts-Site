@@ -9,7 +9,11 @@ This was a project during my internship at Code Tenderloin.
 This project was built in glitch and moved to github to better showcase code and project description.
 
 # Designs
+## Wireframe Design
+- Ensuring cross-platform layout and prioritizing content with low-fiedlity wireframing in Figma.
+https://www.figma.com/file/L3OkkqMfhvXY42TJTs3Usy/Rainbow-Site---Code-Tenderloin-Designs?type=design&node-id=0%3A1&mode=design&t=tTUjYnPh4Ph5j9Wd-1
 
+## Goals Met
 - Sleek and Attractive UI (Fonts, Images, and Colors) to attract users in discovering the seven colors.
 - Mobile friendly. Work across all platforms.
 - Interactive components with (transform: rotating image), (animation: cleaning the image when hovering) and transitions, providing immersive experience of discovering the photo and facts about the color. (Only in desktop and tablets)
