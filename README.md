@@ -1,6 +1,6 @@
 # Rainbow-Colors-Facts-Site
 
-Visit Site: https://rainbow-kelvin-ck-chan.glitch.me/
+Visit Site: https://chan34kelvin.github.io/Rainbow-Colors-Facts-Site/
 
 The project features an eye-catching website that presents facts about the seven rainbow colors. With a sleek design and interactive components using transform, animation and transitions, it aim to provide an engaging user experience, encouraging visitors to explore and navigate the rainbow colors with curiosity.
 
