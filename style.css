@@ -337,7 +337,7 @@ to this section's matching END comment to see page-specific styles.
     /*     border: 25px double transparent; */
     /*     border-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/photo-1555505019-8c3f1c4aba5f.jpg?v=1655508772320")
       10 round; */
-    background-image: url("https://cdn.glitch.global/05f60519-21e9-466e-bce5-674241e3b943/grey-wooden-background_1048-1517.webp?v=1655277802253");
+    background-image: url("assets/grey-wooden-background_1048-1517.webp");
     display: flex;
     justify-content: center;
     align-items: center;
